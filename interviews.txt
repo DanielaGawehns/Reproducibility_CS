@@ -1,0 +1,26 @@
+List of possible interviews and CS subfields: 
+
+
+Evolutionary Algorithms/Computation: Furong (LIACS), Manuel Lopez, Luis Paquete, Mike Preus, Emma Hart
+
+
+ACM Badging: Vashti Galpin (paper badged in ACM Transactions on Modeling and Computer Simulation/ ACM TOMACS)
+
+Adelinde Uhrmacher (Rostock) https://mosi.informatik.uni-rostock.de/en/group/staff/prof-dr-rer-nat-adelinde-m-uhrmacher/
+
+possibly: Dominic Orchard 
+
+
+Cyber Security:
+
+Quantum Computing: 
+
+Text Mining:
+
+Deep Learning: 
+
+Bio Informatics: 
+
+Applied Fields: 
+
+Computational Neuroscience: Stephen Eglen, Onerva Korhonen (Network Neuroscience)
