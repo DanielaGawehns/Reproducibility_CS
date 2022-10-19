@@ -10,12 +10,13 @@ Adelinde Uhrmacher (Rostock) https://mosi.informatik.uni-rostock.de/en/group/sta
 
 possibly: Dominic Orchard 
 
+AutoML: Jan van Rijn (LIACS), Frank Hutter (Uni Freiburg, AutoML conf) 
 
 Cyber Security:
 
 Quantum Computing: 
 
-Text Mining:
+Text Mining/ Computational Linguistics: Jesse Dodge (twitter, NAACL repro badge)
 
 Deep Learning: 
 
@@ -24,3 +25,5 @@ Bio Informatics:
 Applied Fields: 
 
 Computational Neuroscience: Stephen Eglen, Onerva Korhonen (Network Neuroscience)
+
+Vicky Rampin (ACM working group reproducibility)
