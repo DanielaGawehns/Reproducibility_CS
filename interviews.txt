@@ -17,6 +17,10 @@ Cyber Security:
 Quantum Computing: 
 
 Text Mining/ Computational Linguistics: Jesse Dodge (twitter, NAACL repro badge)
+Ana Lucic (UvA), Myrthe Reuver (VU), 
+
+INformation Retrieval: 
+Maria Maistro (Copenhagen) http://dir2021.nl/slides/20220204_DIR_keynote.pdf
 
 Deep Learning: 
 
