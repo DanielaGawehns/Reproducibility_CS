@@ -2,7 +2,9 @@
 title: "Report Reproducibility in CS Survey"
 author: "D Gawehns"
 date: "`r Sys.Date()`"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -47,11 +49,14 @@ DataQ1Num<-sapply(DataQ1, function (x) as.numeric(x))
 TotalTimesSelected<- colSums(DataQ1Num,na.rm=TRUE)
 AnswerOption<- sapply(attributes(DataQ1Num)$dimnames [[2]] , function(x) strsplit(x,"48")[[1]][2])
 dataForBarplot<- data.frame(TotalTimesSelected,AnswerOption)
-ggplot(data= dataForBarplot, aes(x=AnswerOption, y = TotalTimesSelected)) +
+resQ1<-ggplot(data= dataForBarplot, aes(x=AnswerOption, y = TotalTimesSelected)) +
   geom_bar(stat="identity")+
   geom_text(aes(label = TotalTimesSelected),hjust=1.5, color = "white", size = 3.5)+
   coord_flip()+
   theme_minimal()
+resQ1
+ggsave("ResultsQ1.pdf")
+
 
 ```
 
@@ -68,12 +73,13 @@ DataQ2Num<-sapply(DataQ2, function (x) as.numeric(x))
 TotalTimesSelected<- colSums(DataQ2Num,na.rm=TRUE)
 AnswerOption<- sapply(attributes(DataQ2Num)$dimnames [[2]] , function(x) strsplit(x,"51")[[1]][2])
 dataForBarplot<- data.frame(TotalTimesSelected,AnswerOption)
-ggplot(data= dataForBarplot, aes(x=AnswerOption, y = TotalTimesSelected)) +
+resQ2<- ggplot(data= dataForBarplot, aes(x=AnswerOption, y = TotalTimesSelected)) +
   geom_bar(stat="identity")+
   geom_text(aes(label = TotalTimesSelected),hjust=1.5, color = "white", size = 3.5)+
   coord_flip()+
   theme_minimal()
-
+resQ2
+ggsave("ResultsQ2.pdf")
 ``` 
 
 ### Third question: How could you make your work as least reproducible as possible?
@@ -89,11 +95,13 @@ TotalTimesSelected<- colSums(DataQ3Num,na.rm=TRUE)
 AnswerOption<- sapply(attributes(DataQ3Num)$dimnames [[2]] , function(x) strsplit(x,"44")[[1]][2])
 dataForBarplot<- data.frame(TotalTimesSelected,AnswerOption)
 
-ggplot(data= dataForBarplot, aes(x=AnswerOption, y = TotalTimesSelected)) +
+resQ3<- ggplot(data= dataForBarplot, aes(x=AnswerOption, y = TotalTimesSelected)) +
   geom_bar(stat="identity")+
   geom_text(aes(label = TotalTimesSelected),hjust=1.5, color = "white", size = 3.5)+
   coord_flip()+
   theme_minimal()
+resQ3
+ggsave("ResultsQ3.pdf",resQ3)
 
 ```
 
