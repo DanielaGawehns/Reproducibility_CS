@@ -123,12 +123,15 @@ LabelsSliderFour<- rep("Computational...realworld", length(AnswersSliderFour))
 DataSliders<- data.frame(Values= c(AnswersSliderOne,AnswersSliderTwo, AnswersSliderThree, AnswersSliderFour),
               Labels= c(LabelsSliderOne,LabelsSliderTwo,LabelsSliderThree,LabelsSliderFour))
 
-ggplot(DataSliders, aes(x=Labels, y= Values))+
+sliders<-ggplot(DataSliders, aes(x=Labels, y= Values))+
    geom_dotplot(binaxis='y', stackdir='center',
                  stackratio= 1, dotsize=0.5,
                  binwidth = 1.5)+
    coord_flip()
 
+sliders
+
+ggsave("sliders.pdf",sliders)
 
 
 ```
